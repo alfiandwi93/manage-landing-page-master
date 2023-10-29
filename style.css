@@ -1,0 +1,283 @@
+:root {
+  --bright-red: hsl(12, 88%, 59%);
+  --hbright-red: hsl(12, 88%, 80%);
+  --dark-blue: hsl(228, 39%, 23%);
+  --dark-grayish-blue: hsl(227, 12%, 61%);
+  --very-dark-blue: hsl(233, 12%, 13%);
+  --very-pale-red: hsl(13, 100%, 96%);
+  --very-light-gray: hsl(0, 0%, 98%);
+
+  --font-bevietnam: "Be Vietnam Pro", sans-serif;
+}
+
+body {
+  background-image: url("images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: 125% -10%;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/bg-tablet-pattern.svg"); /* Ganti dengan lokasi dan nama file gambar latar belakang Anda */
+  background-repeat: no-repeat;
+  z-index: -1;
+  background-position: -50% 50%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+#navbar .navbar .nav-link{
+  font-family: var(--font-bevietnam);
+  font-weight: 500;
+  color: black;
+}
+
+#navbar .navbar .nav-link:hover {
+  color: var(--dark-grayish-blue);
+}
+
+#navbar .offcanvas {
+  background-color: transparent;
+  margin-top: 0px;
+}
+
+#navbar .btn {
+  font-weight: 700;
+  color: white;
+  background-color: var(--bright-red);
+  box-shadow: 0 5px 10px var(--bright-red);
+}
+
+#navbar .btn:hover {
+  background-color: var(--hbright-red);
+}
+
+#navbar .navbar-toggler{
+  border: none;
+}
+
+#hero h1{
+  font-family: var(--font-bevietnam);
+  font-weight: 700;
+  color: var(--dark-blue);
+  width: 400px;
+}
+
+#hero p{
+  font-family: var(--font-bevietnam);
+  font-weight: 400;
+  color: var(--dark-grayish-blue);
+  width: 400px;
+}
+
+#hero button{
+  font-family: var(--font-bevietnam);
+  font-weight: 400;
+  background-color: var(--bright-red);
+  color: white;
+}
+
+#description {
+  font-family: var(--font-bevietnam);
+}
+
+#description h1{
+  color: var(--dark-blue);
+  font-weight: 700;
+}
+
+#description p{
+  color: var(--dark-grayish-blue);
+  font-weight: 400;
+}
+
+#description .card{
+  background-color: var(--bright-red);
+  color: white;
+  border-color: transparent;
+}
+
+#description span{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#testi h3{
+  font-family: var(--font-bevietnam);
+  font-weight: 700;
+  color: var(--dark-blue);
+}
+
+#testi .card{
+  border: none;
+  background-color: var(--very-light-gray);
+  height: auto;
+  font-family: var(--font-bevietnam);
+  font-weight: 400;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#testi p{
+  color: var(--dark-grayish-blue);
+}
+
+#testi img{
+  height: 70px;
+  width: 70px;
+  z-index: 3;
+}
+
+#testi button{
+  font-family: var(--font-bevietnam);
+  font-weight: 400;
+  color: white;
+  background-color: var(--bright-red);
+}
+
+#cta {
+  background-color: var(--bright-red);
+  font-family: var(--font-bevietnam);
+  color: white;
+  background-image: url("images/bg-simplify-section-desktop.svg");
+}
+
+#cta button{
+  background-color: white;
+  color: var(--bright-red);
+}
+
+#cta button:hover{
+  color: var(--hbright-red);
+}
+
+#footer {
+  color: white;
+  background-color: var(--very-dark-blue);
+  font-family: var(--font-bevietnam);
+}
+
+#footer button{
+  background-color: var(--bright-red);
+  color: white;
+}
+
+#footer button:hover{
+  background-color: var(--hbright-red);
+}
+
+#footer .icon{
+  height: 25px;
+  width: 25px;
+}
+
+#footer .copyright{
+  color: var(--dark-grayish-blue);
+}
+
+#footer .logo{
+  height: 25px;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+
+  #navbar .offcanvas-body {
+  background-color: white;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#navbar .offcanvas{
+  margin-top: 30px;
+  height: 35vh;
+}
+
+#navbar .offcanvas-backdrop{
+  background: rgb(175,103,233);
+background: linear-gradient(180deg, rgba(175,103,233,0) 0%, rgba(0,0,0,1) 100%);
+}
+
+#hero h1{
+  font-size: 36px;
+}
+
+}
+
+/* Medium devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+
+body{
+  background-position: 90px -90px;
+  background-size: 100%;
+}
+
+body::before {
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-position: 180px 20%;
+}
+
+#navbar .offcanvas-body {
+  background-color: white;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#navbar .offcanvas{
+  margin-top: 30px;
+  height: 40vh;
+}
+
+#navbar .offcanvas-backdrop{
+  background: rgb(175,103,233);
+background: linear-gradient(180deg, rgba(175,103,233,0) 0%, rgba(0,0,0,1) 100%);
+}
+
+  #description span{
+    font-size: 17px;
+}
+
+#description .red{
+    position: relative;
+}
+
+#description .red::before {
+  content: "";
+  width: 90%;
+  height: 100%; /* Atur tinggi sesuai kebutuhan */
+  position: absolute;
+  top: 0; /* Atur posisi sesuai kebutuhan */
+  right: 0;
+  background-color: var(--very-pale-red);
+  z-index: -1;
+}
+
+#cta h1{
+  font-size: 40px;
+}
+
+#cta {
+  background-repeat: no-repeat;
+  background-image: url("images/bg-simplify-section-mobile.svg");
+}
+
+}
+  
